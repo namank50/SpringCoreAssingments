@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context/ 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <beans>
+    <bean id="Customer" class="Customer">
+    <constructor-arg  index="0" type="int" value="1234"/>   
+    <constructor-arg  index="1" value="Naman"/> 
+    <constructor-arg  index="2" value="9720531773"/>   
+    <constructor-arg  index="3" ref="Address"/> 
+    
+    </bean>
+    
+    
+    
+    <bean id="Address" class="Address">
+    <constructor-arg  index="0" value="Pant Vihar Colony"/>   
+    <constructor-arg  index="1" value="Pantnagar"/> 
+    <constructor-arg  index="2" value="263149"/>   
+    <constructor-arg  index="3" value="India"/> 
+    </bean>
+    
+    
+    </beans>
+    
+    </beans>
